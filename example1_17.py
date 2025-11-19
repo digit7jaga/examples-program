@@ -25,7 +25,7 @@ students = {
 students1=[]
 for x in students.items():
     students1.append(x)
-# print(students1)
+print(students1)
 
 
 for i,jaga in enumerate((students1)):

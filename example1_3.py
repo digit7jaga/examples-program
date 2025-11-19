@@ -9,16 +9,16 @@ inputs=[1, 2, 4, 5, 6]
 
 # for i in range(len(inputs)-1):
 #     print(i)
-diffs = [inputs[i+1]-inputs[i] for i in range(len(inputs)-1)]
-# print(diffs)
+diff=[inputs[i+1]-inputs[i] for i in range(len(inputs)-1)]
+print(diff)
 
-common_diff =max(set(diffs),key=diffs.count)
-# print(common_diff)
+commondiff=max(set(diff),key=diff.count)
+# print(commondiff)
 
-for i,j in enumerate(diffs):#range(len(diffs)),
-    if diffs[i] != common_diff:
+for i,j in enumerate(diff):#range(len(diffs)),
+    if diff[i] != commondiff:
             # Return the expected number at the break
-        print(inputs[i] +1)
+        print(inputs[i]+1)
 
 
 

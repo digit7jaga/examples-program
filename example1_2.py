@@ -12,6 +12,9 @@
 #  for integer string conversion: value has 33138 digits;
 # use sys.set_int_max_str_digits() to increase the limit
 
+import sys
+sys.set_int_max_str_digits(35000)  # or a higher value if needed
+
 def digits(n):
     """sum of digits"""
     ins=str(n).strip()
@@ -29,8 +32,6 @@ def digits(n):
 inputs=int(input("enter: "))
 inputs1=digits(inputs)
 print(inputs1)
-
-
 
 
 
