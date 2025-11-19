@@ -1,4 +1,8 @@
 hi i created master2 in master master1
 with new file name master2new.txt
 hi hello vanakkam
+<<<<<<< Updated upstream
 jagajagajaga12345
+=======
+hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+>>>>>>> Stashed changes
