@@ -13,7 +13,14 @@ array=[]
 
 for i in words:
     if i.isalpha() :
-        if any(x in i.lower() for x in vowels):
+        FOUND= False
+        for x in vowels:
+            if x in i.lower():
+                FOUND= True
+        if FOUND:
+        # for x in vowels:
+        #     if x in i.lower():
+        # if any(x in i.lower() for x in vowels):
             array.append(i.lower().strip().replace(" ",""))
 print(array)
 
