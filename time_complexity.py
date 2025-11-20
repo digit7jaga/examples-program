@@ -22,5 +22,13 @@ lists=[1,2,3]
 size=(sys.getsizeof(lists))
 print(size)
 
-#pympler
+#tracemalloc
+import tracemalloc
 
+tracemalloc.start()
+lists=[1,"jaga","ram","zoro",10]
+lists1=[1,2,3,4,5,6,7,8,9]
+snap=tracemalloc.take_snapshot()
+stats=snap.statistics("lineno")
+for i in stats[:1]:
+    print(i)
